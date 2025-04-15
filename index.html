@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QRGen</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<section>
+			<div>
+				<h1>QR-Code Generator</h1>
+				<form>
+					<fieldset>
+						<label for="qrcode-input">URL or text</label>
+						<input type="text" id="qrcode-input">
+					</fieldset>
+					<fieldset>
+						<legend>Picture size (px)</legend>
+
+						<div>
+							<input type="radio" name="qrcode-size" id="size-160">
+							<label for="size-160">160px</label>
+
+							<input type="radio" name="qrcode-size" id="size-320">
+							<label for="size-320">320px</label>
+
+							<input type="radio" name="qrcode-size" id="size-640">
+							<label for="size-640">640px</label>
+
+						</div>
+					</fieldset>
+
+					<button id="btn-create">Create QR-Code</button>
+				</form>
+			</div>
+			<div>
+				<canvas id="qrcode-canvas"></canvas>
+				<button id="btn-download">Download QR-Code</button>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

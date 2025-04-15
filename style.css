@@ -1,0 +1,94 @@
+html {
+	background: #280035;
+	color: white;
+}
+
+* {
+	font-family: Montserrat;
+}
+
+section {
+	background: #400053;
+	width: 800px;
+	height: 600px;
+	padding: 10px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+#qrcode-canvas {
+	background-color: white;
+	width: 300px;
+	height: 300px;
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px 0px;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: 0;
+	align-items: center;
+}
+
+legend {
+	float: right
+}
+
+fieldset div {
+	display: flex;
+	flex-direction: row;
+}
+
+button {
+	background: #7d00a3;
+	border: none;
+	border-radius: 12px;
+	padding: 5px;
+	font-size: 1.2rem;
+}
+
+button:hover {
+	cursor: pointer;
+	background: #6f0091;
+	transition: background 0.3s
+}
+
+.btn-create {
+	width: 100%;
+}
+
+input[name="qrcode-size"] {
+	display: none
+}
+
+input[name="qrcode-size"] + label {
+	background: #280035;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: gray;
+	transition: color 0.3s;
+}
+
+input[name="qrcode-size"]:checked + label {
+	color: white;
+}
