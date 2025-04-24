@@ -10,12 +10,15 @@ html {
 section {
 	background: #400053;
 	width: 800px;
-	height: 600px;
 	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	border-radius: 30px;
 	display: flex;
 	justify-content: center;
 	gap: 30px;
+	margin-top: 100px;
+	flex-wrap: wrap;
 }
 
 form {
@@ -95,4 +98,21 @@ input[name="qrcode-size"] + label:hover {
 
 input[name="qrcode-size"]:checked + label {
 	color: white;
+}
+
+#qrcode-input {
+	width: 200px;
+	height: 1.3rem;
+	border: 0;
+	outline: 0;
+}
+
+#qrcode-input:focus {
+	border: 4px solid #630563;
+}
+
+#qrcode-input-container {
+	height: 2rem;
+	display: flex;
+	align-items: center;
 }
