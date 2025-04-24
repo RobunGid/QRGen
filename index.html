@@ -10,26 +10,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 	<main>
 		<section>
 			<div>
 				<h1>QR-Code Generator</h1>
-				<form>
+				<form action="#">
 					<fieldset>
 						<label for="qrcode-input">URL or text</label>
-						<input type="text" id="qrcode-input">
+						<input type="text" id="qrcode-input" maxlength="256">
 					</fieldset>
 					<fieldset>
 						<legend>Picture size (px)</legend>
 
 						<div>
-							<input type="radio" name="qrcode-size" id="size-160">
+							<input type="radio" name="qrcode-size" id="size-160" data-size="160">
 							<label for="size-160">160px</label>
 
-							<input type="radio" name="qrcode-size" id="size-320">
+							<input type="radio" name="qrcode-size" id="size-320" data-size="320" checked>
 							<label for="size-320">320px</label>
 
-							<input type="radio" name="qrcode-size" id="size-640">
+							<input type="radio" name="qrcode-size" id="size-640" data-size="640">
 							<label for="size-640">640px</label>
 
 						</div>
@@ -44,5 +45,6 @@
 			</div>
 		</section>
 	</main>
+	<script src="script.js"> </script>
 </body>
 </html>

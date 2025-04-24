@@ -63,12 +63,12 @@ button {
 	border-radius: 12px;
 	padding: 5px;
 	font-size: 1.2rem;
+	transition: background 0.3s;
 }
 
 button:hover {
 	cursor: pointer;
 	background: #6f0091;
-	transition: background 0.3s
 }
 
 .btn-create {
@@ -86,7 +86,11 @@ input[name="qrcode-size"] + label {
 	border-radius: 10px;
 	cursor: pointer;
 	color: gray;
-	transition: color 0.3s;
+	transition: color 0.3s, background 0.3s;
+}
+
+input[name="qrcode-size"] + label:hover {
+	background: #220028;
 }
 
 input[name="qrcode-size"]:checked + label {
