@@ -6,7 +6,8 @@ const input = document.querySelector('#qrcode-input')
 const canvas = document.querySelector('#qrcode-canvas');
 const ctx = canvas.getContext('2d');
 
-const createQRCode = () => {
+const createQRCode = (event) => {
+	event.preventDefault();
 	const text = input.value.trim()
 	const encodedText = unescape(encodeURIComponent(text));
 	const size = parseInt(document.querySelector("input[name='qrcode-size']:checked").dataset.size);
